@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Telugu Text to Speech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="splash">
+    <h1>🟡 Ganesh VoiceOS</h1>
+  </div>
+
+  <main id="app" class="hidden">
+    <div id="tour" class="tour hidden">
+      <h2>👋 Welcome!</h2>
+      <p>This website reads text in Telugu, Hindi, or English using your browser's voice. Type and click "Speak".</p>
+      <button onclick="hideTour()">Got it!</button>
+    </div>
+
+    <h1>🗣️ Telugu Voice Reader</h1>
+    <textarea id="textInput" placeholder="Type Telugu, Hindi, or English text here..."></textarea>
+
+    <div class="controls">
+      <label>Rate <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1"></label>
+      <label>Pitch <input type="range" id="pitch" min="0" max="2" step="0.1" value="1"></label>
+    </div>
+
+    <button id="speakBtn">🔊 Speak</button>
+
+    <section id="history">
+      <h3>🕘 History</h3>
+      <ul id="historyList"></ul>
+    </section>
+
+    <footer>🚀 Developed by Ganesh</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
